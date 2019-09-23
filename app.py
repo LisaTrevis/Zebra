@@ -127,9 +127,31 @@ coordinates = (4, 7, 9)
 print(coordinates[2])
 
 # Functions use the def keyword and require indentation. If there's 2 or more words,
-# it's convention to use underscrores and lowercase:
+# it's convention to use underscrores and lowercase
+# nothing within the function after a return statement will not run:
 def sayhi(name):
     print("Hello, " + name)
 
 sayhi("Lisa")
+
+def cube(num):
+    return num**3
+
+print(cube(2))
+
+is_female = True
+is_tall = True
+
+if is_female or is_tall:
+    print("You are either tall or a woman.")
+
+if is_female and is_tall:
+    print("You are a tall woman.")
+elif is_female and not(is_tall):
+    print("You are a short woman.")
+elif not(is_female) and is_tall:
+    print("You are a tall man.")
+else:
+    print("You are not a short man.")
+
 
